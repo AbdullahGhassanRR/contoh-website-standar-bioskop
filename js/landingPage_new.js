@@ -4,9 +4,9 @@
         const navLinks = document.getElementById('navLinks');
         const hero = document.querySelector('.hero');
         const images = [
-            '../../assets/img/banner.jpg',
-            '../../assets/img/premium-cinema.jpg',
-            '../../assets/img/metropole-xxi.jpg',
+            '../assets/img/banner.jpg',
+            '../assets/img/premium-cinema.jpg',
+            '../assets/img/metropole-xxi.jpg',
         ];
         let current = 0;
         function updateHeroBackground() {
@@ -99,28 +99,28 @@
         // now showing movies 
         const moviesCard = [{
             title: "Until Dawn",
-            image: "../../assets/img/until-dawn.webp",
+            image: "../assets/img/until-dawn.webp",
             rated: "R",
             duration: "2h 15m"
         },
         {title: "The Last of Us",
-            image: "../../assets/img/the-last-of-us.webp",
+            image: "../assets/img/the-last-of-us.webp",
             rated: "R",
             duration: "1h 45m"},
         {title: "Mission Impossible: The Final Reckoning",
-            image: "../../assets/img/mission-imposible.webp",
+            image: "../assets/img/mission-imposible.webp",
             rated: "PG",
             duration: "2h 30m"},
         {title: "Thunderbolts*",
-            image: "../../assets/img/thunderbolts.webp",
+            image: "../assets/img/thunderbolts.webp",
             rated: "G",
             duration: "1h 55m"},
         {title: "From the World of John Wick: Ballerina",
-            image: "../../assets/img/ballerina.webp",
+            image: "../assets/img/ballerina.webp",
             rated: "R",
             duration: "2h 05m"},
         {title: "Captain America: Brave New World",
-            image: "../../assets/img/captain-america-5.webp",
+            image: "../assets/img/captain-america-5.webp",
             rated: "PG-13",
             duration: "2h 22m"},
             
@@ -144,17 +144,6 @@
             `;
             moviesGrid.appendChild(movieCard);
         })
-        // <div class="movies-grid">
-        //     <div class="movie-card">
-        //         <img src="../../assets/img/until-dawn.webp"alt="Movie 1" class="movie-poster">
-        //         <div class="movie-info">
-        //             <h3 class="movie-title">Until Dawn</h3>
-        //             <div class="movie-meta">
-        //                 <span>R</span>
-        //                 <span>2h 15m</span>
-        //             </div>
-        //         </div>
-        //     </div>
 
     function handleNavLinksVisibility() {
         const header = document.querySelector('header');
@@ -228,3 +217,4 @@
                 blurredBg.style.backgroundImage = `url(${firstImage.src})`;
             }
         });
+
