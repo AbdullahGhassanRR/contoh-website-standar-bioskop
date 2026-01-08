@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sinéfolis | Now Showing</title>   
+    <link href="https://fonts.googleapis.com/css2?family=Cylburn&display=swap" rel="stylesheet">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="../css/nowShowingPage.css">
+</head>
+<body>
+    <header>
+        <a href="../html/landingPage_new.html" class="logo">Sinéfolis</a>
+        <ul class="nav-links" id="navLinks">
+                <a href="../html/nowShowingPage.html">Now Showing</a>
+                <li><a href="../html/promoPage.html">Promo</a></li>
+                <li><a href="../html/cinemaPage.html">Our Cinema</a></li>
+                <li><a href="../html/feedbackPage.html">Feedback</a></li>
+            </ul>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <main>
+        <h1 class="section-title">Now Showing</h1>
+        
+        <!-- Filter Controls
+        <div class="filter-controls">
+            <button class="filter-btn active" data-filter="all">All Movies</button>
+            <button class="filter-btn" data-filter="action">Action</button>
+            <button class="filter-btn" data-filter="drama">Drama</button>
+            <button class="filter-btn" data-filter="sci-fi">Sci-Fi</button>
+            <button class="filter-btn" data-filter="fantasy">Fantasy</button>
+        </div> -->
+        
+        <!-- Movies Grid -->
+        <div class="movies-grid">
+            <!-- Movie Card 1 -->
+            <div class="movie-card" data-category="action">
+                <img src="../../assets/img/until-dawn.webp" alt="The Last Stand" class="movie-poster">
+                <div class="movie-content">
+                      <h3 class="movie-title">Until Dawn</h3>
+                    <div class="movie-meta">
+                        <span>PG-13 | 2h 15m</span>
+                        <span class="movie-rating">
+                            <i class="fas fa-star"></i> 8.7/10
+                        </span>
+                    </div>
+                    <p class="movie-description">A year after Melanie's disappearance, Clover and her friends explore a remote valley for answers. Hunted by a masked killer, they’re murdered one by one—only to wake up and relive the same night repeatedly.</p>
+                    <div class="movie-showtimes">
+                        <button class="showtime-btn">11:00 AM</button>
+                        <button class="showtime-btn">2:30 PM</button>
+                        <button class="showtime-btn">6:00 PM</button>
+                        <button class="showtime-btn">9:45 PM</button>
+                    </div>
+                    <div class="movie-actions">
+                        <button class="action-btn trailer-btn" data-trailer="https://www.youtube.com/embed/dQw4w9WgXcQ">
+                            <i class="fas fa-play"></i> Trailer
+                        </button>
+                        <button class="action-btn book-btn">Book Now</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Movie Card 2 -->
+            <div class="movie-card" data-category="drama">
+                <img src="../../assets/img/the-last-of-us.webp" alt="Eternal Whispers" class="movie-poster">
+                <div class="movie-content">
+                    <h3 class="movie-title">The Last of Us</h3>
+                    <div class="movie-meta">
+                        <span>R | 1h 58m</span>
+                        <span class="movie-rating">
+                            <i class="fas fa-star"></i> 9.2/10
+                        </span>
+                    </div>
+                    <p class="movie-description">Twenty years after modern civilization has been destroyed, Joel, a hardened survivor, is hired to smuggle Ellie, a 14-year-old girl, out of an oppressive quarantine zone. What starts as a small job soon becomes a brutal, heartbreaking journey, as they both must traverse the United States and depend on each other for survival.</p>
+                    <div class="movie-showtimes">
+                        <button class="showtime-btn">10:45 AM</button>
+                        <button class="showtime-btn">1:15 PM</button>
+                        <button class="showtime-btn">4:30 PM</button>
+                        <button class="showtime-btn">8:00 PM</button>
+                    </div>
+                    <div class="movie-actions">
+                        <button class="action-btn trailer-btn" data-trailer="https://www.youtube.com/embed/dQw4w9WgXcQ">
+                            <i class="fas fa-play"></i> Trailer
+                        </button>
+                        <button class="action-btn book-btn">Book Now</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Movie Card 3 -->
+            <div class="movie-card" data-category="sci-fi">
+                <img src="../../assets/img/mission-imposible.webp" alt="Nebula Drift" class="movie-poster">
+                <div class="movie-content">
+                    <h3 class="movie-title">Mission Impossible: The Final Reckoning</h3>
+                    <div class="movie-meta">
+                        <span>PG-13 | 2h 32m</span>
+                        <span class="movie-rating">
+                            <i class="fas fa-star"></i> 8.9/10
+                        </span>
+                    </div>
+                    <p class="movie-description">Ethan Hunt and his team race against time to stop a powerful AI called the Entity, which has infiltrated global intelligence networks. With governments and a figure from Hunt’s past in pursuit, they must shut it down before it changes the world forever.</p>
+                    <div class="movie-showtimes">
+                        <button class="showtime-btn">12:00 PM</button>
+                        <button class="showtime-btn">3:45 PM</button>
+                        <button class="showtime-btn">7:15 PM</button>
+                        <button class="showtime-btn">10:30 PM</button>
+                    </div>
+                    <div class="movie-actions">
+                        <button class="action-btn trailer-btn" data-trailer="https://www.youtube.com/embed/dQw4w9WgXcQ">
+                            <i class="fas fa-play"></i> Trailer
+                        </button>
+                        <button class="action-btn book-btn">Book Now</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Movie Card 4 -->
+            <div class="movie-card" data-category="fantasy">
+                <img src="../../assets/img/thunderbolts.webp" alt="The Moonlit Kingdom" class="movie-poster">
+                <div class="movie-content">
+                    <h3 class="movie-title">Thunderbolts*</h3>
+                    <div class="movie-meta">
+                        <span>PG | 1h 45m</span>
+                        <span class="movie-rating">
+                            <i class="fas fa-star"></i> 8.5/10
+                        </span>
+                    </div>
+                    <p class="movie-description">After finding themselves ensnared in a death trap, seven disillusioned castoffs must embark on a dangerous mission that will force them to confront the darkest corners of their pasts.</p>
+                    <div class="movie-showtimes">
+                        <button class="showtime-btn">9:30 AM</button>
+                        <button class="showtime-btn">12:15 PM</button>
+                        <button class="showtime-btn">3:00 PM</button>
+                        <button class="showtime-btn">5:45 PM</button>
+                    </div>
+                    <div class="movie-actions">
+                        <button class="action-btn trailer-btn" data-trailer="https://www.youtube.com/embed/dQw4w9WgXcQ">
+                            <i class="fas fa-play"></i> Trailer
+                        </button>
+                        <button class="action-btn book-btn">Book Now</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Movie Card 5 -->
+            <div class="movie-card" data-category="action">
+                <img src="../../assets/img/ballerina.webp" alt="Midnight Racer" class="movie-poster">
+                <div class="movie-content">
+                    <h3 class="movie-title">From The World of John Wick: Ballerina</h3>
+                    <div class="movie-meta">
+                        <span>R | 2h 05m</span>
+                        <span class="movie-rating">
+                            <i class="fas fa-star"></i> 8.1/10
+                        </span>
+                    </div>
+                    <p class="movie-description">Taking place during the events of John Wick: Chapter 3 - Parabellum, Eve Macarro begins her training in the assassin traditions of the Ruska Roma.</p>
+                    <div class="movie-showtimes">
+                        <button class="showtime-btn">11:30 AM</button>
+                        <button class="showtime-btn">2:45 PM</button>
+                        <button class="showtime-btn">6:30 PM</button>
+                        <button class="showtime-btn">10:15 PM</button>
+                    </div>
+                    <div class="movie-actions">
+                        <button class="action-btn trailer-btn" data-trailer="https://www.youtube.com/embed/dQw4w9WgXcQ">
+                            <i class="fas fa-play"></i> Trailer
+                        </button>
+                        <button class="action-btn book-btn">Book Now</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Movie Card 6 -->
+            <div class="movie-card" data-category="drama">
+                <img src="../../assets/img/captain-america-5.webp" alt="The Architect" class="movie-poster">
+                <div class="movie-content">
+                    <h3 class="movie-title">Captain America: Brave New World</h3>
+                    <div class="movie-meta">
+                        <span>PG-13 | 2h 22m</span>
+                        <span class="movie-rating">
+                            <i class="fas fa-star"></i> 9.0/10
+                        </span>
+                    </div>
+                    <p class="movie-description">After meeting with newly elected U.S. President Thaddeus Ross, Sam finds himself in the middle of an international incident. He must discover the reason behind a nefarious global plot before the true mastermind has the entire world seeing red.</p>
+                    <div class="movie-showtimes">
+                        <button class="showtime-btn">10:00 AM</button>
+                        <button class="showtime-btn">1:30 PM</button>
+                        <button class="showtime-btn">5:00 PM</button>
+                        <button class="showtime-btn">8:30 PM</button>
+                    </div>
+                    <div class="movie-actions">
+                        <button class="action-btn trailer-btn" data-trailer="https://www.youtube.com/embed/dQw4w9WgXcQ">
+                            <i class="fas fa-play"></i> Trailer
+                        </button>
+                        <button class="action-btn book-btn">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Trailer Modal -->
+    <div class="modal" id="trailerModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <iframe class="modal-video" src="" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <footer>
+        <a href="../html/landingPage_new.html" class="footer-logo">Sinéfolis</a>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+        <!-- <div class="footer-links">
+            <a href="#">About Us</a>
+            <a href="#">Careers</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Contact Us</a>
+        </div> -->
+        <p class="copyright">© 2025 Sinéfolis Cinema. All Rights Reserved.</p>
+    </footer>
+
+<script src="../js/nowShowingPage.js"></script>
+</body>
+</html>
